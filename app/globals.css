@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-black text-white antialiased;
+}
+
+h1, h2, h3, h4 {
+  @apply font-semibold tracking-tight;
+}
+
+.container-padding {
+  @apply px-6 sm:px-8 lg:px-12;
+}
+
+.glow-border {
+  box-shadow: 0 0 0 1px rgba(201, 162, 39, 0.25), 0 16px 40px rgba(0, 0, 0, 0.3);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, rgba(201, 162, 39, 0.15), rgba(255, 255, 255, 0));
+}
+
+.section {
+  @apply py-16 sm:py-20 lg:py-24;
+}
+
+.text-muted {
+  @apply text-white/70;
+}
+
+.link-hover {
+  @apply transition hover:text-gold;
+}
